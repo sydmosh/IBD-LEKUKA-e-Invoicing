@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { CalendarDays, Clock3, ShieldCheck } from "lucide-react";
+import { ShieldCheck } from "lucide-react";
 import { Slide } from "@/components/presentation/SlideFrame";
 import { Reveal } from "@/components/ui/Reveal";
 import type { ContentOf } from "@/data/slides";
@@ -52,14 +52,6 @@ export function CoverSlide({ content }: { content: ContentOf<"cover"> }) {
           <Reveal delay={0.34}>
             <ul className="flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-white/80">
               <li className="flex items-center gap-2">
-                <CalendarDays className="h-4 w-4 text-lekuka-bright" aria-hidden="true" />
-                <span className="font-medium text-white">{content.date}</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <Clock3 className="h-4 w-4 text-lekuka-bright" aria-hidden="true" />
-                <span className="font-medium text-white">{content.time}</span>
-              </li>
-              <li className="flex items-center gap-2">
                 <span
                   aria-hidden="true"
                   className="h-1.5 w-1.5 rounded-full bg-ibd-red"
@@ -72,14 +64,6 @@ export function CoverSlide({ content }: { content: ContentOf<"cover"> }) {
           <Reveal delay={0.42}>
             <div className="flex flex-wrap items-center gap-4">
               <div className="inline-flex items-center gap-4 rounded-2xl bg-white px-4 py-2.5 shadow-2xl shadow-black/40 ring-1 ring-white/25 sm:px-5">
-                <Image
-                  src="/images/rsl.png"
-                  alt="Revenue Services Lesotho"
-                  width={512}
-                  height={172}
-                  className="h-8 w-auto sm:h-9"
-                />
-                <span aria-hidden="true" className="h-7 w-px bg-line-soft" />
                 <Image
                   src="/images/lekuka.png"
                   alt="Lekuka e-Invoicing"

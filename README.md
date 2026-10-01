@@ -135,7 +135,7 @@ Drop replacement files into `public/` using the **same file name** and rebuild â
 | --- | --- | --- |
 | `public/logo-ibd-dark.png` | Dark slides + site header | **"dark" = for dark backgrounds** (white lettering, transparent PNG) |
 | `public/logo-ibd-white.png` | Light slides | **"white" = white background artwork** (navy lettering) |
-| `public/images/rsl.png` | Cover, footer | RSL logo |
+| `public/images/rsl.png` | â€” | RSL logo. Not currently placed on any slide; drop it into a slide if you need it again. |
 | `public/images/lekuka.png` | Cover, footer | Lekuka logo |
 | `public/images/lekuka-awareness-poster.jpg` | Cover slide + open-graph image | Update the width/height in `src/app/layout.tsx` if the size changes |
 | `public/images/ibd-integrations-poster.jpg` | Closing slide | |

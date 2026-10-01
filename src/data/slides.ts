@@ -16,8 +16,6 @@ interface CoverContent {
   titleMain: string;
   titleSub: string;
   themeLines: string[];
-  date: string;
-  time: string;
   presenter: string;
   badge: string;
   poster: string;
@@ -225,8 +223,6 @@ export const slides: Slide[] = [
       titleMain: event.title,
       titleSub: event.titleSuffix,
       themeLines: [...event.theme],
-      date: event.date,
-      time: event.time,
       presenter: event.organizer,
       badge: company.partnerBadge,
       poster: "/images/lekuka-awareness-poster.jpg",
